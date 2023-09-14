@@ -1,0 +1,34 @@
+Question 1:  What is CDN? Why do we use it ?
+
+Answer : CDN (Content Delivery Network)
+A CDN is a distributed network of servers located at various data centers worldwide. Its primary purpose is to deliver web content, such as images, stylesheets, JavaScript files, and other assets, to end-users with high availability and performance.
+CDNs are used to reduce the latency of loading web resources by serving them from a server geographically closer to the user.
+They help distribute the load on your web server and can protect against certain types of web traffic attacks.
+CDNs are commonly used to host and serve popular JavaScript libraries, CSS frameworks, and other assets to improve website loading times.
+
+Question 2: Why is React known as React?
+
+Answer: React is known as "React" because it reflects its core design philosophy of reacting to changes in data and efficiently updating the user interface (UI) to reflect those changes.
+React uses a virtual DOM (Document Object Model) to compare the current state of the UI with the desired state and updates only the parts of the UI that have changed. This reactive approach to UI rendering is a key feature of React.
+
+Question 3:`What is crossorigin in script tag?`
+
+Answer: The crossorigin attribute in a script tag is used when loading scripts from external domains or CDNs. It specifies whether the browser should enforce CORS (Cross-Origin Resource Sharing) restrictions when fetching the script.
+Possible values for the crossorigin attribute are "anonymous" and "use-credentials." "anonymous" means that the browser will make a cross-origin request without sending credentials (cookies or HTTP authentication). "use-credentials" means that the browser will include credentials in the request.
+Using crossorigin is essential when loading scripts from a different origin to ensure security and prevent potential vulnerabilities.
+
+Question:  What is diference between React and ReactDOM?
+
+Answer: Difference Between React and ReactDOM:
+
+React (react) is the core library for building user interfaces in React applications. It provides the functionality to create and manage React elements, components, and the virtual DOM.
+ReactDOM (react-dom) is a separate library that is used for rendering React components in the DOM (Document Object Model) of a web page. It includes methods like ReactDOM.render for rendering React components into HTML elements.
+In summary, React is the core library for building UI components, while ReactDOM is responsible for rendering those components into the browser DOM.
+
+Question: What is difference between react.development.js and react.production.js files via CDN?
+
+ Answer: Differe nce Between react.development.js and react.production.js via CDN:
+
+react.development.js is the development version of the React library, and it includes additional warnings, error messages, and development tools to aid developers during development and debugging. It is larger in size.
+react.production.js is the production version of the React library, and it is optimized for use in production environments. It removes development-specific code and warnings, resulting in a smaller file size and better performance.
+In a production environment, it is recommended to use react.production.js for better performance and to minimize the bundle size of your application. Developers typically use react.development.js during development to benefit from debugging tools and error messages.
